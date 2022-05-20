@@ -1,6 +1,63 @@
 body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/* SLIDES */
+.bg-creamos{
+    background-image: url('../media/bg-Creamos.png');
+    background-size: cover;
+    background-position: center;
+}
+.bg-diseñamos{
+    background-image: url('../media/bg-Diseñamos.png');
+    background-size: cover;
+    background-position: center;
+}
+.bg-armamos{
+    background-image: url('../media/bg-Armamos.png');
+    background-size: cover;
+    background-position: center;
+}
+.bg-innovamos{
+    background-image: url('../media/bg-Innovamos.png');
+    background-size: cover;
+    background-position: center;
+}
+.texto-slide{
+    position: relative;
+    top: 200px;
+}
+.height{
+    height: 100vh;
+}
+@media (max-width:768px) {
+    .bg-creamos{
+        background-position: left;
+    }
+    .bg-diseñamos{
+        background-position: right;
+    }
+    .bg-armamos{
+        background-position: left;
+    }
+    .bg-innovamos{
+        background-position: right;
+    }
+    .texto-slide{
+        top:auto;
+    }
+    .height{
+        height: 10vh;
+    }
+}
+.texto-slide h1{
+    color: rgb(233, 115, 4);
+    text-transform: uppercase;
+}
+.texto-slide p{
+    color: #fff;
+}
+
+
 /* CLIENTES */
 .contenedor{
     display: flex;
@@ -10,18 +67,22 @@ body{
     box-sizing: border-box;
 }
 .box{
+    position: relative;
     flex: 1;
     overflow: hidden;
     margin: 8px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, .4);
-    transition: all 300ms;
-
+    transition: ease 300ms;
+    border-radius: 2.5rem;
 }
 .box>img{
     /* width: 200%; */
-    height: auto;
+    height: 95vh;
     object-fit: cover;
-    transition: all 300ms;
+    transition: ease 300ms;
+}
+.box:hover{
+    flex: 96%;
 }
 
 .img-fit{
@@ -34,9 +95,11 @@ body{
     flex: 96%;
 }
 
+
 .height{
     height: 100vh;
 }
+
 
 /* NOSOTROS */
 .rectan-nosotros{

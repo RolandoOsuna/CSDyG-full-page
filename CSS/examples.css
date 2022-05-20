@@ -280,7 +280,7 @@ h1{
 }
 .section p,
 .intro p{
-	color: #fff;
+	/* color: #fff; */
 }
 
 /* Centered texts in each section
