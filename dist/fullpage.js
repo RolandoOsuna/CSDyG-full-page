@@ -1886,7 +1886,7 @@
           setState({
             scrollTrigger: 'slideArrow'
           });
-          EventEmitter.emit('moveSlideLeft', {
+          EventEmitter.emit('moveSlideRight', {
             section: section
           });
         }

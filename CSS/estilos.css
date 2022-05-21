@@ -40,16 +40,29 @@ body{
 .taza{
     height: 100vh;
 }
-
-
-.texto-slide h1{
-    color: rgb(233, 115, 4);
-    text-transform: uppercase;
+.text-nosotros{
+    position: relative;
+    top: 35%;
+    padding: 0 3rem  ;
 }
-.texto-slide p{
-    color: #fff;
+.text-nosotros>p{
+ font-size: 5rem;
 }
+.text-nosotros>span{
+ font-size: 2rem;
+}
+@media (max-width:1000px){
+    .text-nosotros{
+    top: 14%;
 
+    }
+    .text-nosotros>p{
+     font-size: 3.2rem;
+    }
+    .text-nosotros>span{
+     font-size: 1.7rem;
+    }
+}
 
 /* CLIENTES */
 .contenedor{
@@ -166,5 +179,11 @@ body{
     .fp-controlArrow.fp-prev{
         left: 50%;
     }
+    .text-nosotros{
+        position:unset;
+        padding: 150px 2rem 40px 2rem ;
+    }
+    .text-nosotros>p{}
+    
 }
 
