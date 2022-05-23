@@ -6,11 +6,6 @@ body{
 .padding{
     padding-top: 110px;
 }
-/* NAV */
-.nav-index{
-    /* position: relative; */
-    z-index: 10;
-}
 /* SLIDES */
 .bg-creamos{
     background-image: url('../media/bg-Creamos.png');
@@ -36,10 +31,11 @@ body{
     position: relative;
     top: 200px;
 }
-.height{
-    height: auto;
-}
+
 .taza{
+    height: 100vh;
+}
+.aside-nosotros{
     height: 100vh;
 }
 .text-nosotros{
@@ -140,12 +136,24 @@ body{
     font-weight: bold;
     color: #F58549;
 }
+
+
+.transicion-esquema{
+    color: rgba(0, 0, 0, 0);
+    transition: 300ms all;
+}
+.transicion-esquema:hover{
+    color: rgba(0, 0, 0, 0);
+    color: #000;
+
+}
+/* 
 .fs>span{
     font-size: large;
 }
 .fs>p{
     font-size:small;
-}
+} */
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev{
     top: 90%;
@@ -153,6 +161,22 @@ body{
 
 .fp-controlArrow.fp-prev{
     left: 80%;
+}
+.formulario{
+    position: relative;
+    top:20%;
+    /* height: 100vh; */
+}
+.borde-input{
+    border-radius: .55rem;
+}
+
+@media (mix-width:1500px) {
+    .formulario{
+        position: relative;
+        top: 27%;
+        /* height: 100vh; */
+    }
 }
 
 @media (max-width:868px) {
@@ -174,6 +198,10 @@ body{
     .taza{
         height: 60vh;
     }
+    .height{
+        max-width: 100%;
+        height: auto;
+    }
     .rectan-esquema{
         height: 80vh;
     }
@@ -182,18 +210,30 @@ body{
         object-fit: fill;
         height: 48vh;
     }
-    .fp-controlArrow.fp-prev{
-        left: 50%;
-    }
+  
     .text-nosotros{
         position:unset;
-        padding: 150px 2rem 40px 2rem ;
+        padding: 40px 2rem 40px 2rem ;
     }
     .texto-mvv{
         font-size:2.5rem;
         color: #000;
         text-align: center;
     }
-    
+    .fp-controlArrow.fp-prev{
+        left: 0%;
+    }
+    .fp-controlArrow.fp-next{
+        right: 0%;
+    }
+    .fp-controlArrow.fp-next,
+    .fp-controlArrow.fp-prev{
+    top: 60%;
+    }
+    .formulario{
+        top: 0;
+        padding-top: 40px;
+    }
+  
 }
 
