@@ -28,31 +28,31 @@ carrusel.addEventListener("mouseout", () => {
 
 start();
 // CLICK
-let titulo = document.querySelector('.titulo-esquema');
-let conten = document.querySelector('.conten-esquema');
-titulo.addEventListener('click', element => {
-  conten.classList.toggle('transicion-esquema')
-});
-let titulo2 = document.querySelector('.titulo-esquema2');
-let conten2 = document.querySelector('.conten-esquema2');
-titulo2.addEventListener('click', element => {
-  conten2.classList.toggle('transicion-esquema2')
-});
-let titulo3 = document.querySelector('.titulo-esquema3');
-let conten3 = document.querySelector('.conten-esquema3');
-titulo3.addEventListener('click', element => {
-  conten3.classList.toggle('transicion-esquema3')
-});
-let titulo4 = document.querySelector('.titulo-esquema4');
-let conten4 = document.querySelector('.conten-esquema4');
-titulo4.addEventListener('click', element => {
-  conten4.classList.toggle('transicion-esquema4')
-});
-let titulo5 = document.querySelector('.titulo-esquema5');
-let conten5 = document.querySelector('.conten-esquema5');
-titulo5.addEventListener('click', element => {
-  conten5.classList.toggle('transicion-esquema5')
-});
+ let titulo = document.querySelector('.titulo-esquema');
+ let conten = document.querySelector('.conten-esquema');
+ titulo.addEventListener('click', element => {
+   conten.classList.toggle('transicion-esquema')
+ });
+ let titulo2 = document.querySelector('.titulo-esquema2');
+ let conten2 = document.querySelector('.conten-esquema2');
+ titulo2.addEventListener('click', element => {
+   conten2.classList.toggle('transicion-esquema2')
+ });
+ let titulo3 = document.querySelector('.titulo-esquema3');
+ let conten3 = document.querySelector('.conten-esquema3');
+ titulo3.addEventListener('click', element => {
+   conten3.classList.toggle('transicion-esquema3')
+ });
+ let titulo4 = document.querySelector('.titulo-esquema4');
+ let conten4 = document.querySelector('.conten-esquema4');
+ titulo4.addEventListener('click', element => {
+   conten4.classList.toggle('transicion-esquema4')
+ });
+ let titulo5 = document.querySelector('.titulo-esquema5');
+ let conten5 = document.querySelector('.conten-esquema5');
+ titulo5.addEventListener('click', element => {
+   conten5.classList.toggle('transicion-esquema5')
+ });
 // TRANSICION SCROLL
 const planeacion = document.getElementById('planeacion');
 const alcance = document.getElementById('alcance');
