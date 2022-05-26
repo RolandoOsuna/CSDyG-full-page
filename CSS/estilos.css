@@ -381,8 +381,11 @@ body{
     .centrado{
         height: unset;
     }
-    .izquierda .derecha{
-        transform:none;
+    .izquierda{
+        transform:translateX(-50px);
+    }
+    .derecha{
+        transform:translateX(50px);
     }
     .btn-flotante{
         width: 70px;
