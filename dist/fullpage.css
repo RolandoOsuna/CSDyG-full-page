@@ -69,7 +69,7 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.fp-prev{
+/* .fp-prev{
     left: 15px;
 }
 .fp-next{
@@ -79,15 +79,15 @@ html.fp-enabled,
     width: 0;
     height: 0;
     border-style: solid;
-}
-.fp-arrow.fp-prev {
+} */
+/* .fp-arrow.fp-prev {
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent rgb(78, 66, 66) transparent transparent;
 }
 .fp-arrow.fp-next {
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent rgb(78, 66, 66);
-}
+} */
 /* .fp-scrollable {
     overflow: hidden;
     position: relative;
