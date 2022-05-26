@@ -18,13 +18,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+	<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 <body>
 	
 	<!-- HEADER / SLIDER -->
 	<nav class="row fixed-top align-items-center justify-content-between text-start text-muted ">
-		<div class=" col-3 col-lg-7 fs-3 fw-bold d-md-block d-none " style="color: rgb(233, 115, 4);"><img src="media/Logo.png" class="m-3" width="80px">CSDG</div>
+		<div class=" col-3 col-lg-7 fs-3 fw-bold d-md-block d-none " style="color: rgb(233, 115, 4);"><img src="media/logo naranja.png" class="m-3" width="80px">CSDG</div>
 		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Nosotros</div>
 		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Clientes</div>
 		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Contacto</div>
@@ -33,37 +33,34 @@
 	
 	<div class="section" id="section0">
 	    <div class="slide bg-body  pt-5 p-md-0" id="slide1"  >
-			<div class="intro" style="">
-				<div class="row centrado">
-					<div class="col-12 col-lg-6 text-center ">
-						<img src="media/Taza.png" class="taza" data-rellax-speed="-4">
-					</div>
-					<div class="col-12 col-lg-6 text-center">
-						<div class=" text-center">
-							<img src="media/CREAMOS.png" class="img-fluid px-5 px-md-5 rellax" data-rellax-speed="7">
-							<p class="text-dark fs-1 p-0 px-lg-5">Todo lo que necesitas para garantizar el éxito de tu empresa</p>
-						</div>
-					</div>
-				</div>			
-			 	<div class="slide bg-black pt-5 p-md-0" id="slide2">
-					<div class="row centrado ">
-						<div class="col-12 col-lg-6 text-center ">
-							<div class="ps-3 pt-5">
-								<img src="media/DISEÑAMOS.png" class="img-fluid px-5 p-md-0 " width="">
-								<!-- <img src="media/text-disenamos.png" class="img-fluid"> -->
-								<p class="text-white fs-1 p-0 px-lg-5">Paquetes para tu negocio basándonos en las fortalezas y debilidades del mismo </p>
-
-							</div>
-						</div>
-						<div class="col-12 col-lg-6">
-							<img src="media/Pluma.png" class="img-fluid height">
-						</div>
+			<div class="row centrado">
+				<div class="col-12 col-lg-6 text-center ">
+					<img src="media/Taza.png" class="taza" data-rellax-speed="-4">
+				</div>
+				<div class="col-12 col-lg-6 text-center">
+					<div class=" text-center">
+						<img src="media/CREAMOS.png" class="img-fluid px-5 px-md-5 rellax" data-rellax-speed="7">
+						<p class="text-dark fs-1 p-0 px-lg-5">Todo lo que necesitas para garantizar el éxito de tu empresa</p>
 					</div>
 				</div>
-			</div>
-
-		</div>
-			
+			</div>			
+		</div>			
+	</div>
+	<div class="section">
+		<div class="slide bg-black pt-5 p-md-0" id="slide2">
+		   <div class="row centrado ">
+			   <div class="col-12 col-lg-6 text-center ">
+				   <div class="ps-3 pt-5">
+					   <img src="media/DISEÑAMOS.png" class="img-fluid px-5 p-md-0 " width="">
+					   <!-- <img src="media/text-disenamos.png" class="img-fluid"> -->
+					   <p class="text-white fs-1 p-0 px-lg-5">Paquetes para tu negocio basándonos en las fortalezas y debilidades del mismo </p>
+				   </div>
+			   </div>
+			   <div class="col-12 col-lg-6">
+				   <img src="media/Pluma.png" class="img-fluid height">
+			   </div>
+		   </div>
+	   </div>
 	</div>
 	<div class="section">
 	    <div class="slide bg-body pt-5 p-md-0" id="slide2" >
@@ -75,11 +72,13 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-6 text-end">
-					<img src="media/cordon.png" class="img-fluid taza" width="700px">
+					<img src="media/cordon.png" class="img-fluid taza" width="650px">
 				</div>
 			</div>
 		</div>
-	    <div class="slide bg-black pt-5 p-md-0" id="slide1">
+	</div>
+	<div class="section">
+		<div class="slide bg-black pt-5 p-md-0" id="slide1">
 			<div class="row centrado">
 				<div class="col-12 col-lg-6 text-center">
 					<div class="ps-3 pt-5">
@@ -92,8 +91,9 @@
 					<img src="media/Tarjeta de presentacion.png" class=" taza">
 				</div>
 			</div>
-		</div>
+		</div>		
 	</div>
+
 
 	<!-- NOSOTROS -->
 	<div class="section fp-auto-height-responsive" id="section1" >
@@ -237,7 +237,7 @@
 	<!-- ESQUEMA -->
 	<section class="section bg-armamos  capa" style="padding-top:150px ;">
 		<div class="container">
-			<div class="row align-items-center justify-content-evenly py-5">
+			<div id="planeacion" class="row align-items-center justify-content-evenly py-5 izquierda transiciones" >
 				<div class="col-12 col-md-5 ">	
 					<div class="col  " >
 						<p class="fs-3 titulo-esquema">Planeación</p>
@@ -246,7 +246,7 @@
 				</div>
 				<div class="col-6"></div>
 			</div>
-			<div class="row align-items-center justify-content-evenly py-5">
+			<div id="alcance" class="row align-items-center justify-content-evenly py-5 derecha transiciones">
 				<div class="col-6"></div>
 				<div class="col-12 col-md-5 ">	
 					<div class="col text-end">
@@ -255,7 +255,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-evenly py-5">
+			<div id="enfoque" class="row align-items-center justify-content-evenly py-5 derecha transiciones">
 				<div class="col-12 col-md-5  " >
 					<div class="col ">
 						<span class="fs-3 titulo-esquema3">Enfoque</span>
@@ -264,7 +264,7 @@
 				</div>
 				<div class="col-6"></div>
 			</div>
-			<div class="row align-items-center justify-content-evenly py-5">
+			<div id="organizacion" class="row align-items-center justify-content-evenly py-5 derecha transiciones">
 				<div class="col-6"></div>
 				<div class="col-12 col-md-5">
 					<div class="col  text-end ">
@@ -273,7 +273,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center justify-content-evenly py-5">
+			<div id="crecimiento" class="row align-items-center justify-content-evenly py-5 izquierda transiciones">
 				<div class="col-12 col-md-5 ">
 					<div class="col fs-3">
 						<span class="fs-3 titulo-esquema5">Crecimiento</span>
@@ -357,6 +357,7 @@
 
 <script type="text/javascript" src="dist/fullpage.js"></script>
 <script type="text/javascript" src="JS/examples.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -367,8 +368,6 @@
         navigationTooltips: ['First page', 'Second page', 'Nosotros', 'Clientes', 'Misión-Visión-Valores', 'Esquema de trabajo', 'Footer']
     });
 </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 <script>
 	// Accepts any class name
