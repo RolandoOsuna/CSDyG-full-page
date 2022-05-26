@@ -66,7 +66,7 @@ const cargarContenido = (entradas, observador) => {
 
 	entradas.forEach((entrada) => {
 		if(entrada.isIntersecting){
-			entrada.target.classList.add('visibleee');
+			entrada.target.classList.add('visible');
 		} else {
 			// entrada.target.classList.remove('visible');
 		}

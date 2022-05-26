@@ -273,7 +273,7 @@ body{
 .derecha {
 	transform: translateX(100px);
 }
-.visibleee {
+.visible{
 	opacity: 1;
 	transform: scale(1) translateX(0);
 }
@@ -306,6 +306,15 @@ body{
     display: flex;
     align-items: center;
 }
+
+.btn-flotante{
+    width: 200px;
+    height: 5vh;
+    background-color: #25D366;
+    color: white;
+    border-radius: 4rem;
+}
+
 @media (mix-width:1500px) {
     .formulario{
         position: relative;
@@ -372,6 +381,16 @@ body{
     .centrado{
         height: unset;
     }
-  
+    .izquierda .derecha{
+        transform:none;
+    }
+    .btn-flotante{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: white;
+        background-color: #25D366;
+        
+    }
 }
 
