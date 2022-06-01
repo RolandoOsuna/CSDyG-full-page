@@ -3,12 +3,14 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>CSCSCS</title>
+	<title>CSDG</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
 	<meta name="Resource-type" content="Document" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/Logo.png">
+
 	<link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
@@ -23,10 +25,17 @@
 	
 	<!-- HEADER / SLIDER -->
 	<nav class="row fixed-top align-items-center justify-content-between text-start text-muted ">
-		<div class=" col-3 col-lg-7 fs-3 fw-bold d-md-block d-none " style="color: rgb(233, 115, 4);"><img src="media/logo naranja.png" class="m-3" width="80px">CSDG</div>
-		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Nosotros</div>
-		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Clientes</div>
-		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">Contacto</div>
+		<div class=" col-3 col-lg-7 fs-3 fw-bold d-md-block d-none " style="color: rgb(233, 115, 4);">
+			<a href="#Creamos" class="link-secondary"><img src="media/logo naranja.png" class="m-3" width="70px">CSDG</a></div>
+		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">
+			<a href="#Nosotros" class="link-secondary">Nosotros</a>
+		</div>
+		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">
+			<a href="#Clientes" class="link-secondary">Clientes</a>
+		</div>
+		<div class=" col-3 col-lg-1 fs-4 d-md-block d-none">
+			<a href="#Contacto" class="link-secondary">Contacto</a>
+		</div>
 	</nav>
 	<!-- BOTON FLOTANTE -->
 	<div class="btn-flotante fixed-bottom d-flex text-end justify-content-center m-0 ms-md-5"style="left: 80%; bottom:3%;">
@@ -39,7 +48,7 @@
 	</div>
 <div id="fullpage">
 	
-	<div class="section" id="section0">
+	<div class="section" id="header">
 	    <div class="slide bg-body  pt-5 p-md-0" id="slide1"  >
 			<div class="row centrado">
 				<div class="col-12 col-lg-6 text-center ">
@@ -335,11 +344,16 @@
 		<!-- FOOTER -->
 		<div class=" bg-dark px-5 py-3">
 			<div class="row text-center align-items-center justify-content-between">
-				<div class="col-12 col-lg-2 fs-5 text-light text-shadow">Inicio</div>
-				<div class="col-12 col-lg-2 fs-5 text-light text-shadow">Nosotros</div>
-				<div class="col-12 col-lg-2 fs-5 text-light text-shadow d-none d-md-block"><img src="media/Logo blanco.png" class="img-fluid" width="80px"></div>
-				<div class="col-12 col-lg-2 fs-5 text-light text-shadow">Clientes</div>
-				<div class="col-12 col-lg-2 fs-5 text-light text-shadow">Contácto</div>
+				<div class="col-12 col-lg-2 fs-5 text-light text-shadow"><a href="#Creamos" class="link-light">Inicio</a>
+				</div>
+				<div class="col-12 col-lg-2 fs-5 text-light text-shadow"><a href="#Nosotros" class="link-light">Nosotros</a>
+				</div>
+				<div class="col-12 col-lg-2 fs-5 text-light text-shadow d-none d-md-block"><a href="#Creamos">
+					<img src="media/Logo blanco.png" class="img-fluid" width="80px"></a></div>
+				<div class="col-12 col-lg-2 fs-5 text-light text-shadow"><a href="#Clientes" class="link-light">Clientes</a>
+				</div>
+				<div class="col-12 col-lg-2 fs-5 text-light text-shadow"><a href="#Contacto" class="link-light">Contacto</a>
+				</div>
 			</div>
 			<div class="rectan-nosotros my-2 shadow"></div>
 			<div class="row align-items-center justify-content-between">
@@ -385,11 +399,11 @@
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        anchors: ['Creamos', 'Diseñamos', 'Armamos', 'Innovamos', 'Nosotros', 'Clientes', 'Mision', 'Esquema', 'Contacto'],
         // sectionsColor: ['#fff', /*'#f58549'*/ '#FFA143', '#', ''],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['First page', 'Second page', 'Nosotros', 'Clientes', 'Misión-Visión-Valores', 'Esquema de trabajo', 'Footer']
+        navigationTooltips: ['Creamos', 'Diseñamos', 'Armamos', 'Innovamos', 'Nosotros', 'Clientes', 'Misión-Visión',  'Esquema de trabajo', 'Footer']
     });
 </script>
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
